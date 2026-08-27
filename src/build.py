@@ -469,21 +469,22 @@ def shape_page(sid):
     lst = tier_sort(in_shape(sid))
     label = SHAPES[sid]
     extra = ''
-    if sid == 'S02':
-        deep = [e for e in lst if e.get('caps')]
+    capcols = CAPCOLS.get(sid)
+    deep = [e for e in lst if e.get('caps')] if capcols else []
+    if len(deep) >= 2:
         extra = ('<section class="sec"><div class="sech"><span>The comparison</span>'
                  '<h2>What each plot keeps and discards</h2></div>'
                  '<div class="tablewrap"><table><thead><tr><th>Plot</th>%s</tr></thead><tbody>%s'
                  '</tbody></table></div><div class="legend"><span>✓ shown</span>'
                  '<span>~ partial or indirect</span><span>✕ not shown</span></div></section>' % (
-                     ''.join('<th>%s</th>' % c[1] for c in CAPCOLS),
+                     ''.join('<th>%s</th>' % c[1] for c in capcols),
                      ''.join('<tr><td class="tname"><a href="%splot/%s/">%s</a></td>%s</tr>' % (
                          root, e['slug'], esc(e['name']),
                          ''.join('<td style="text-align:center"><span class="pill o-%s" style="border-radius:50%%;'
                                  'width:22px;height:22px;display:inline-flex;align-items:center;'
                                  'justify-content:center">%s</span></td>' % (
                                      CAPMARK[e['caps'][c[0]]][1], CAPMARK[e['caps'][c[0]]][0])
-                                 for c in CAPCOLS)) for e in deep)))
+                                 for c in capcols)) for e in deep)))
     hero = ''
     if sid == 'S02':
         hero = ('<p class="intro">One continuous measurement and one grouping column — the most common table '
