@@ -26,6 +26,8 @@ TAG|HM|public-health|Public health & global health
 TAG|HM|clinical-trials|Clinical trials & evidence synthesis
 TAG|HM|diagnostics|Diagnostics & laboratory medicine
 TAG|HM|radiology|Radiology & medical imaging
+TAG|HM|medical-physics|Medical physics & dosimetry
+TAG|HM|radiation-oncology|Radiation oncology & radiotherapy
 TAG|HM|pathology|Pathology & histopathology
 TAG|HM|pharmacology-clin|Clinical pharmacology & pharmacokinetics
 TAG|HM|nutrition|Nutrition & dietetics

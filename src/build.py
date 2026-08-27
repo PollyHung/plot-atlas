@@ -80,7 +80,10 @@ for r in ROWS:
         id=r['id'], name=r['name'], alias=r['aliases'], fam=r['family'],
         shape=r['data_shape'], shape_label=r['shape_label'], origin=r['origin_code'],
         tier=r['universality'], depth=r['depth_tier'],
-        areas=[a for a in r['areas'].split(';') if a],
+        # eight universal entries carry the sentinel 'ALL' instead of area codes;
+        # it is not an area, so it must not become a link
+        areas=[a for a in r['areas'].split(';') if a and a != 'ALL'],
+        all_areas='ALL' in r['areas'].split(';'),
         tags=[t for t in r['subject_tags'].split(';') if t],
         tools=[t.strip() for t in r['tools'].split(';') if t.strip()],
         slug=slugify(r['name']))
@@ -296,6 +299,9 @@ def entry_page(e):
     if e['areas']:
         side.append('<section><h4>Subject areas</h4><div class="list">%s</div></section>' % ''.join(
             '<a href="%sarea/%s/">%s</a>' % (root, a, esc(AREAS.get(a, a))) for a in e['areas']))
+    elif e['all_areas']:
+        side.append('<section><h4>Subject areas</h4><p style="color:var(--muted)">Every area — this plot is '
+                    'used across the whole of science.</p></section>')
     else:
         side.append('<section><h4>Subject areas</h4><p style="color:var(--muted)">Universal — used across '
                     'every area, so deliberately untagged.</p></section>')

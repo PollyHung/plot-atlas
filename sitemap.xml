@@ -813,6 +813,17 @@
 <url><loc>https://pollyhung.github.io/plot-atlas/plot/free-body-diagram/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/plot/bertin-reorderable-matrix/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/plot/storyline-narrative-chart/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/percentage-depth-dose-curve/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/isodose-curve/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/dose-volume-histogram/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/differential-dose-volume-histogram/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/radiation-beam-profile/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/bragg-peak-curve/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/spread-out-bragg-peak/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/gamma-index-map/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/tumour-control-probability-curve/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/normal-tissue-complication-probability-curve/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/plot/linac-output-constancy-chart/</loc><lastmod>2026-08-27</lastmod><priority>0.8</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/shapes/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/shape/S01/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/shape/S02/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
@@ -891,6 +902,7 @@
 <url><loc>https://pollyhung.github.io/plot-atlas/family/social-science-and-econometrics/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/family/business-finance-and-ops/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/family/conceptual-and-schematic/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://pollyhung.github.io/plot-atlas/family/radiotherapy-and-dosimetry/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/browse/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/about/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>
 <url><loc>https://pollyhung.github.io/plot-atlas/sitemap-page/</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority></url>

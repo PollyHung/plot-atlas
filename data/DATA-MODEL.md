@@ -6,18 +6,18 @@ The catalogue is no longer a flat list. Three new fields turn it into something 
 
 Every entry is keyed to the **structure of its input table**, not to its appearance. Siblings then fall out automatically: two plots are alternatives if they consume the same shape. This is authored once per shape instead of once per pair, and it powers the entry point the Observable glossary cannot have — *"I have this kind of data, what can I plot?"*
 
-31 shapes cover all 812 entries.
+31 shapes cover all 823 entries.
 
 | Shape | Meaning | Entries |
 |---|---|---:|
-| `S01` | One continuous variable | 43 |
+| `S01` | One continuous variable | 45 |
 | `S02` | One continuous variable, split by group | 12 |
 | `S03` | Two continuous variables | 57 |
 | `S04` | Paired or repeated measurements on the same units | 5 |
 | `S05` | One summary value per category | 29 |
 | `S06` | Parts of a whole | 11 |
 | `S07` | Set membership and overlap | 3 |
-| `S08` | Time series | 69 |
+| `S08` | Time series | 70 |
 | `S09` | Compositional (parts constrained to sum to a whole) | 14 |
 | `S10` | Directional or circular | 17 |
 | `S11` | Many variables per observation (wide / high-dimensional) | 40 |
@@ -31,15 +31,15 @@ Every entry is keyed to the **structure of its input table**, not to its appeara
 | `S19` | Spectrum (intensity vs ordered index) | 40 |
 | `S20` | Instrument trace (signal vs time) | 28 |
 | `S21` | Image or raster grid | 18 |
-| `S22` | Model output vs observed | 61 |
+| `S22` | Model output vs observed | 63 |
 | `S23` | Values along genomic coordinate | 23 |
 | `S24` | Posterior or simulation draws | 13 |
-| `S25` | Surface over a two-dimensional domain | 11 |
+| `S25` | Surface over a two-dimensional domain | 13 |
 | `S26` | Physical lab output (no input table) | 65 |
 | `S27` | Schematic (no data) | 26 |
 | `S28` | Text corpus | 12 |
 | `S29` | Three-dimensional structure or spatial coordinates | 17 |
-| `S30` | Characteristic curve (measured response vs a controlled variable) | 20 |
+| `S30` | Characteristic curve (measured response vs a controlled variable) | 24 |
 | `S31` | Reference chart or state-space diagram | 12 |
 
 Four of these are deliberately *not* data shapes — `S26` physical lab output, `S27` schematic, `S28` text corpus, `S29` three-dimensional structure. Entries there have no input table, so their siblings group by **what the figure is evidence of** rather than by table structure. That is the honest way to handle a western blot: its alternatives are ELISA and targeted mass spectrometry, not other scatter plots.
@@ -64,7 +64,7 @@ If a histogram carries all six area tags, every subject filter returns histogram
 | `universal` | 68 | **No subject tags at all.** Surfaced as a "Foundations" entry point instead. |
 | `cross-domain` | 28 | 3+ areas, ranked. |
 | `domain-signature` | 470 | 1–2 areas. The plot that says "this is an X paper" — volcano, Kaplan-Meier, ternary. |
-| `niche` | 246 | One subfield, unambiguous — concordia diagram, Dalitz plot, Krona chart. |
+| `niche` | 257 | One subfield, unambiguous — concordia diagram, Dalitz plot, Krona chart. |
 
 Ranking is only a genuine judgement call for the 28 cross-domain entries. Everything else is either untagged or obvious, which matches how you wanted this handled.
 
@@ -75,16 +75,16 @@ Ranking is only a genuine judgement call for the 28 cross-domain entries. Everyt
 | Tier | Entries | Gets |
 |---|---:|---|
 | `deep` | 168 | Definition · how to read it · **what it hides vs its siblings** · ranked subjects · packages with runnable code · generated image |
-| `standard` | 420 | Definition · how to read it · subjects · packages · image |
+| `standard` | 431 | Definition · how to read it · subjects · packages · image |
 | `stub` | 224 | Definition · tags · one tool pointer |
 
-All 812 are findable and correctly tagged from day one. Depth follows demand, and any stub can be promoted later without restructuring.
+All 823 are findable and correctly tagged from day one. Depth follows demand, and any stub can be promoted later without restructuring.
 
 ---
 
 ## Sibling groups (the tight ones)
 
-These are the shapes where "which one should I use" is a real and frequently-asked question. The loose shapes — 69 time-series entries, 63 geographic — are correct but too broad to read as a menu; there, siblings are ranked by universality so the general options surface first.
+These are the shapes where "which one should I use" is a real and frequently-asked question. The loose shapes — 70 time-series entries, 63 geographic — are correct but too broad to read as a menu; there, siblings are ranked by universality so the general options surface first.
 
 **`S02` — One continuous variable, split by group**
 
@@ -112,7 +112,7 @@ These are the shapes where "which one should I use" is a real and frequently-ask
 
 **`S30` — Characteristic curve (measured response vs a controlled variable)**
 
-  Electrochemical impedance Nyquist plot · Galvanostatic charge-discharge curve · Stress-strain curve · S-N curve · Nanoindentation load-displacement curve · DMA curve · Rheogram · BET adsorption isotherm · Langmuir / Freundlich isotherm fit · Breakthrough curve · Pump / fan performance curve · Magnetic hysteresis loop · I-V curve (semiconductor) · J-V curve (solar cell) · EQE / IPCE spectrum · Tafel plot · Cyclic voltammogram · Differential capacity plot · Creep curve · Beam profile map
+  Electrochemical impedance Nyquist plot · Galvanostatic charge-discharge curve · Stress-strain curve · S-N curve · Nanoindentation load-displacement curve · DMA curve · Rheogram · BET adsorption isotherm · Langmuir / Freundlich isotherm fit · Breakthrough curve · Pump / fan performance curve · Magnetic hysteresis loop · I-V curve (semiconductor) · J-V curve (solar cell) · EQE / IPCE spectrum · Tafel plot · Cyclic voltammogram · Differential capacity plot · Creep curve · Beam profile map · Percentage depth dose curve · Radiation beam profile · Bragg peak curve · Spread-out Bragg peak
 
 **`S31` — Reference chart or state-space diagram**
 
@@ -123,10 +123,10 @@ These are the shapes where "which one should I use" is a real and frequently-ask
 ## Schema
 
 ```
-id              P001–P812
+id              P001–P823
 name            canonical name
 aliases         other field-specific names for the same figure
-family          F01–F33, functional grouping (navigation)
+family          F01–F34, functional grouping (navigation)
 data_shape      S01–S31, structure of the input table (siblings)
 origin_code     D data-driven | H hybrid instrument | L lab-only | C conceptual
 universality    universal | cross-domain | domain-signature | niche
@@ -136,5 +136,10 @@ subject_tags    ranked nested tags (empty for universal)
 tools           packages / technique
 sibling_count   derived: other entries sharing data_shape
 ```
+
+A new family, `F34 Radiotherapy & dosimetry`, was added with the eleven radiation dosimetry
+entries. Scattering them between `F22 Physics, chem & materials` and `F28 Clinical & preclinical
+imaging` would have split one clinical subfield across two families for no gain. This is the only
+structural change made when the dosimetry entries went in; reversing it is one column in the CSV.
 
 `family` and `data_shape` are deliberately different axes. Family answers *"what kind of thing is this"* for browsing; shape answers *"what could I use instead"* for deciding. A volcano plot is family F14 Genomics but shape S03 two-continuous — which is exactly why it sits next to a scatter plot in the comparison view and next to a Manhattan plot in the navigation.
