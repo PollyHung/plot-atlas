@@ -1,0 +1,159 @@
+# ============================================================
+# SUBJECT TAXONOMY  (5 areas + 1 cross-cutting methods layer)
+# Grounded in: Nature subject ontology (nature.com/subjects)
+#              Elsevier Journal Finder taxonomy (screenshots)
+# ============================================================
+AREA|HM|Health & Medicine
+TAG|HM|clinical-medicine|Clinical medicine (general)
+TAG|HM|cardiology|Cardiology & vascular
+TAG|HM|oncology|Oncology
+TAG|HM|neurology|Neurology & stroke
+TAG|HM|psychiatry|Psychiatry & mental health
+TAG|HM|endocrinology|Endocrinology & metabolism
+TAG|HM|gastro-hepatology|Gastroenterology & hepatology
+TAG|HM|nephrology-urology|Nephrology & urology
+TAG|HM|respiratory|Respiratory medicine
+TAG|HM|rheum-immunology|Rheumatology & clinical immunology
+TAG|HM|infectious-disease|Infectious disease
+TAG|HM|obgyn|Obstetrics, gynaecology & reproductive health
+TAG|HM|paediatrics|Paediatrics
+TAG|HM|geriatrics|Geriatrics & ageing
+TAG|HM|surgery|Surgery & perioperative care
+TAG|HM|anaesthesia-icu|Anaesthesia & critical care
+TAG|HM|emergency|Emergency medicine
+TAG|HM|epidemiology|Epidemiology
+TAG|HM|public-health|Public health & global health
+TAG|HM|clinical-trials|Clinical trials & evidence synthesis
+TAG|HM|diagnostics|Diagnostics & laboratory medicine
+TAG|HM|radiology|Radiology & medical imaging
+TAG|HM|pathology|Pathology & histopathology
+TAG|HM|pharmacology-clin|Clinical pharmacology & pharmacokinetics
+TAG|HM|nutrition|Nutrition & dietetics
+TAG|HM|sports-exercise|Sports & exercise science
+TAG|HM|nursing-midwifery|Nursing & midwifery
+TAG|HM|dentistry|Dentistry & oral health
+TAG|HM|veterinary|Veterinary medicine
+TAG|HM|health-econ|Health economics, services & policy
+TAG|HM|anatomy-physiology|Anatomy & physiology
+TAG|HM|genetics-clinical|Medical genetics
+#
+AREA|LS|Life Sciences
+TAG|LS|molecular-cell|Molecular & cell biology
+TAG|LS|biochemistry|Biochemistry
+TAG|LS|structural-biology|Structural biology
+TAG|LS|genetics|Genetics & heredity
+TAG|LS|genomics|Genomics & epigenomics
+TAG|LS|transcriptomics|Transcriptomics
+TAG|LS|single-cell|Single-cell & spatial biology
+TAG|LS|proteomics|Proteomics
+TAG|LS|metabolomics|Metabolomics & lipidomics
+TAG|LS|immunology|Immunology
+TAG|LS|microbiology|Microbiology & virology
+TAG|LS|neuroscience|Neuroscience
+TAG|LS|dev-biology|Developmental biology & stem cells
+TAG|LS|cancer-biology|Cancer biology
+TAG|LS|ecology|Ecology & conservation
+TAG|LS|evolution|Evolution & phylogenetics
+TAG|LS|biodiversity|Biodiversity & systematics
+TAG|LS|plant-science|Plant science & agronomy
+TAG|LS|zoology-behaviour|Zoology & animal behaviour
+TAG|LS|biophysics|Biophysics
+TAG|LS|bioinformatics|Bioinformatics & computational biology
+TAG|LS|systems-biology|Systems biology
+TAG|LS|toxicology|Toxicology
+TAG|LS|pharmacology|Pharmacology & drug discovery
+TAG|LS|biotechnology|Biotechnology & bioengineering
+TAG|LS|biological-techniques|Biological techniques & methods
+#
+AREA|PE|Physical Sciences & Engineering
+TAG|PE|physics-general|Physics (general)
+TAG|PE|condensed-matter|Condensed matter & solid state
+TAG|PE|particle-nuclear|Particle & nuclear physics
+TAG|PE|quantum|Quantum science
+TAG|PE|optics-photonics|Optics & photonics
+TAG|PE|thermodynamics|Thermodynamics & statistical mechanics
+TAG|PE|fluid-dynamics|Fluid dynamics
+TAG|PE|chem-organic|Organic chemistry
+TAG|PE|chem-inorganic|Inorganic & coordination chemistry
+TAG|PE|chem-physical|Physical chemistry
+TAG|PE|chem-analytical|Analytical chemistry
+TAG|PE|electrochemistry|Electrochemistry
+TAG|PE|catalysis|Catalysis
+TAG|PE|materials|Materials science
+TAG|PE|nanoscience|Nanoscience & nanotechnology
+TAG|PE|polymers|Polymers & soft matter
+TAG|PE|crystallography|Crystallography
+TAG|PE|mech-engineering|Mechanical engineering
+TAG|PE|civil-engineering|Civil & structural engineering
+TAG|PE|chem-engineering|Chemical engineering
+TAG|PE|elec-engineering|Electrical & electronic engineering
+TAG|PE|control-systems|Control systems & robotics
+TAG|PE|signal-processing|Signal processing & communications
+TAG|PE|energy|Energy & power
+TAG|PE|metrology|Metrology & instrumentation
+TAG|PE|reliability|Reliability & quality engineering
+#
+AREA|EE|Earth, Environment & Space
+TAG|EE|geology|Geology & structural geology
+TAG|EE|mineralogy-petrology|Mineralogy & petrology
+TAG|EE|geochemistry|Geochemistry
+TAG|EE|geochronology|Geochronology & isotope geology
+TAG|EE|geophysics|Geophysics & seismology
+TAG|EE|palaeontology|Palaeontology & stratigraphy
+TAG|EE|palaeoclimate|Palaeoclimatology & palaeoecology
+TAG|EE|sedimentology|Sedimentology & geomorphology
+TAG|EE|climate|Climate science
+TAG|EE|atmospheric|Atmospheric science & meteorology
+TAG|EE|oceanography|Oceanography & limnology
+TAG|EE|hydrology|Hydrology & water resources
+TAG|EE|soil-science|Soil science
+TAG|EE|environmental-sci|Environmental science & pollution
+TAG|EE|natural-hazards|Natural hazards & risk
+TAG|EE|remote-sensing|Remote sensing & GIS
+TAG|EE|physical-geography|Physical geography
+TAG|EE|planetary|Planetary science
+TAG|EE|astronomy|Astronomy & astrophysics
+TAG|EE|cosmology|Cosmology
+TAG|EE|space-physics|Space & solar physics
+#
+AREA|SH|Social Sciences, Humanities & Economics
+TAG|SH|psychology|Psychology & cognitive science
+TAG|SH|neuro-cognitive|Cognitive neuroscience
+TAG|SH|economics|Economics
+TAG|SH|finance|Finance & investment
+TAG|SH|econometrics|Econometrics & causal inference
+TAG|SH|sociology|Sociology
+TAG|SH|demography|Demography & population studies
+TAG|SH|political-science|Political science & IR
+TAG|SH|public-policy|Public policy & law
+TAG|SH|anthropology|Anthropology
+TAG|SH|archaeology|Archaeology
+TAG|SH|education|Education & pedagogy
+TAG|SH|linguistics|Linguistics & language
+TAG|SH|human-geography|Human geography & urban studies
+TAG|SH|criminology|Criminology
+TAG|SH|forensics|Forensic science
+TAG|SH|business-management|Business & management
+TAG|SH|marketing|Marketing & consumer research
+TAG|SH|operations|Operations & supply chain
+TAG|SH|history|History
+TAG|SH|literature|Literature & textual studies
+TAG|SH|media-studies|Cultural & media studies
+TAG|SH|philosophy|Philosophy & ethics
+TAG|SH|arts-performance|Arts, music & performance
+TAG|SH|digital-humanities|Digital humanities
+TAG|SH|science-studies|Science & technology studies
+#
+AREA|XM|Cross-cutting Methods (Maths, Statistics & Computing)
+TAG|XM|statistics|Statistics & probability
+TAG|XM|bayesian|Bayesian methods
+TAG|XM|machine-learning|Machine learning & AI
+TAG|XM|deep-learning|Deep learning
+TAG|XM|data-science|Data science & analytics
+TAG|XM|computer-science|Computer science
+TAG|XM|mathematics|Mathematics
+TAG|XM|network-science|Network science
+TAG|XM|operations-research|Operations research & optimisation
+TAG|XM|simulation|Simulation & modelling
+TAG|XM|scientometrics|Scientometrics & bibliometrics
+TAG|XM|quality-control|Statistical process control

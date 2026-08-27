@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About the Plot Atlas — what is finished and what is not</title>
+<meta name="description" content="What the Plot Atlas covers, how the four classification axes work, and an honest account of what is written, what is illustrated and what is still only catalogued.">
+<link rel="canonical" href="https://pollyhung.github.io/plot-atlas/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Plot Atlas">
+<meta property="og:title" content="About the Plot Atlas — what is finished and what is not">
+<meta property="og:description" content="What the Plot Atlas covers, how the four classification axes work, and an honest account of what is written, what is illustrated and what is still only catalogued.">
+<meta property="og:url" content="https://pollyhung.github.io/plot-atlas/about/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="../assets/atlas.css">
+<script>try{var t=localStorage.getItem('atlas-theme');if(t&&t!=='system')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="topin">
+ <a class="brand" href="../">Plot <span>Atlas</span></a>
+ <nav class="main"><a href="../browse/">All plots</a><a href="../shapes/">By data shape</a><a href="../subjects/">By subject</a><a href="../origins/">By origin</a><a href="../families/">By family</a><a href="../about/" class="on">About</a></nav>
+ <div class="search">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+  <input id="q" type="search" placeholder="Search 812 plots…" autocomplete="off" aria-label="Search plots">
+  <div class="sugg" id="sugg"></div>
+ </div>
+ <button class="themebtn" id="themebtn" hidden>Theme</button>
+</div></header>
+<main id="main">
+<div class="crumb"><a href="../">Atlas</a> / About</div><div class="sech"><span>About</span><h1>What this is, and what it is not yet</h1></div><div style="max-width:66ch;color:var(--ink-2)">
+<p>A catalogue of 812 plot types used across the sciences, classified four ways: by function
+(33 families), by the shape of the data that produces them (31 shapes), by how the figure is
+physically made (4 origin classes), and by subject (6 areas, 143 nested tags).</p>
+<p>The organising idea is the <a href="../shapes/">data shape</a>. Two plots are alternatives if they
+consume the same table. That relation is authored once per shape rather than once per pair, and it
+supports the question people actually arrive with — <em>I have this kind of data, what could I draw?</em></p>
+<h3 style="font-size:1.15rem;margin:26px 0 8px">Current state</h3>
+<p>All 812 entries are catalogued, classified and searchable, and each has its own page.
+Written depth follows three tiers: <b>168 deep</b>, <b>420 standard</b>,
+<b>224 stub</b>. <b>12</b> entries are fully written; <b>45</b> have a generated figure.
+The remaining 800 pages carry their classification, tooling and alternatives, and say
+plainly that the written guidance is still missing.</p>
+<p>Every figure is generated from synthetic data by script, never copied, so nothing here carries a
+licence restriction. The colour palette is validated for colour-vision deficiency in both themes.</p>
+<h3 style="font-size:1.15rem;margin:26px 0 8px">Known gaps</h3>
+<p>Most entries have no figure yet. Most have no written guidance yet. Meta descriptions on unwritten
+entries are composed from the entry's own classification rather than from a definition sentence, because
+the definition has not been written. Package references were checked against the live CRAN and
+Bioconductor indexes, but 34 cited packages are archived and need substitutes. Subject rankings are
+estimates, not measured publication frequencies.</p>
+<h3 style="font-size:1.15rem;margin:26px 0 8px">How it is built</h3>
+<p>The site is pre-rendered by a Python script into static HTML — one file per entry, no framework and no
+server. <a href="../sitemap-page/">Every page is listed here</a>.</p>
+</div>
+<footer>
+<p><b>Plot Atlas</b> — 812 plot types, indexed by data shape.</p>
+<p>Figures generated from synthetic data. <a href="../about/">What is finished and what is not</a> ·
+<a href="../sitemap-page/">Site index</a></p>
+</footer>
+</main>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
